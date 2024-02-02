@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEBF2"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="309dp"
+        android:layout_height="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/valorant_logo" />
+
+    <LinearLayout
+        android:id="@+id/LayoutRoles"
+        android:layout_width="219dp"
+        android:layout_height="277dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:paddingTop="5dp"
+            android:text="Selecciona tu rol.-"
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/RolesValo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#D30000"
+            android:listSelector="#34007483" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutAgentes"
+        android:layout_width="219dp"
+        android:layout_height="277dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.843"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:paddingTop="5dp"
+            android:text="Selecciona el agente.-"
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/Iniciador"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:visibility="invisible" />
+
+        <Spinner
+            android:id="@+id/Duelista"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:visibility="invisible" />
+
+        <Spinner
+            android:id="@+id/Centinela"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:visibility="invisible" />
+
+        <Spinner
+            android:id="@+id/Smoker"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:visibility="invisible" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

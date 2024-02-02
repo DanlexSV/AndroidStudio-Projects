@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linearLayout2"
+    android:layout_width="366dp"
+    android:layout_height="wrap_content"
+    android:background="#CFCFCF"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.488"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.731"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/ubicacion"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Ubicacion"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/mapsB"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="Maps"
+        android:textSize="20sp" />
+</LinearLayout>

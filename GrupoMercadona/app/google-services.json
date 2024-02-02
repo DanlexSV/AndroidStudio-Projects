@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "185696882187",
+    "project_id": "movilesgrupo-9ad8a",
+    "storage_bucket": "movilesgrupo-9ad8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185696882187:android:35eba8be602ed024f6810e",
+        "android_client_info": {
+          "package_name": "com.example.grupomercadona"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkziV1YwaqK3fahEimgXcfdRG-8wrMQKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

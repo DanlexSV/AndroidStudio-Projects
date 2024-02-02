@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECFDEC"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/Selector"
+        android:layout_width="340dp"
+        android:layout_height="407dp"
+        android:background="#F0FFE0"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/textSelectGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona el juego"
+            android:textAlignment="center"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <Button
+            android:id="@+id/BValorant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#8F0505"
+            android:text="Valorant"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/BHoYoVerse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#00B0FF"
+            android:text="HoYoVerse"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/GameValorant"
+        android:layout_width="411dp"
+        android:layout_height="734dp"
+        android:background="#600000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/RegisterValorant"
+            android:layout_width="346dp"
+            android:layout_height="516dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/textRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REGISTER"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/NewUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Username"
+                android:imeOptions="normal|actionNext"
+                android:inputType="text"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/NewPlayerID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="ID"
+                android:imeOptions="normal|actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="4" />
+
+            <EditText
+                android:id="@+id/PasswordNewP"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Password"
+                android:imeOptions="normal|actionNext"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/EmailNewPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Email"
+                android:imeOptions="normal|actionDone"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/RegisterComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="185dp"
+                android:layout_marginRight="60dp"
+                android:backgroundTint="#F61100"
+                android:text="REGISTRARSE"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textValorant"
+            android:layout_width="220dp"
+            android:layout_height="43dp"
+            android:text="VALORANT"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textIsSelectable="false"
+            android:textSize="34sp"
+            android:textStyle="normal|bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.01999998" />
+
+        <Switch
+            android:id="@+id/switchVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Register"
+            android:textColor="#FFFFFF"
+            android:textOff="Register"
+            android:textOn="Login"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.100000024" />
+
+        <LinearLayout
+            android:id="@+id/LoginValorant"
+            android:layout_width="346dp"
+            android:layout_height="516dp"
+            android:layout_marginTop="10dp"
+            android:background="#FAFAFA"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="invisible">
+
+            <TextView
+                android:id="@+id/textLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/OldUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Username"
+                android:imeOptions="normal|actionNext"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/oldPlayerID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="ID"
+                android:imeOptions="normal|actionNext"
+                android:inputType="text"
+                android:maxLength="4" />
+
+            <EditText
+                android:id="@+id/passwordOldP"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Password"
+                android:imeOptions="normal|actionNext"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/emailOldPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Email"
+                android:imeOptions="normal|actionDone"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/loginComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="185dp"
+                android:layout_marginRight="60dp"
+                android:backgroundTint="#F61100"
+                android:text="Iniciar Sesion"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/GameGenshin"
+        android:layout_width="412dp"
+        android:layout_height="731dp"
+        android:background="#003045"
+        app:layout_constraintBottom_toBottomOf="@+id/GameValorant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/GameValorant"
+        tools:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/HonkaiStarRail"
+            android:layout_width="346dp"
+            android:layout_height="516dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="invisible">
+
+            <TextView
+                android:id="@+id/textHSR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Honkai: Star Rail"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/HSR_UID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="UID"
+                android:imeOptions="normal|actionNext"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/serverHSR"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Server"
+                android:imeOptions="normal|actionNext"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/emailHSR"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Email"
+                android:imeOptions="normal|actionNext"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/passwordHSR"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Password"
+                android:imeOptions="normal|actionDone"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/HSRComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="185dp"
+                android:layout_marginRight="60dp"
+                android:backgroundTint="#00BCD4"
+                android:text="Iniciar Sesion"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/GenshinImpact"
+            android:layout_width="346dp"
+            android:layout_height="516dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/textGenshin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Genshin Impact"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/GenshinUID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="UID"
+                android:imeOptions="normal|actionNext"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/ServerGenshin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Server"
+                android:imeOptions="normal|actionNext"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/GenshinEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Email"
+                android:imeOptions="normal|actionNext"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/passwordGenshin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Password"
+                android:imeOptions="normal|actionDone"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/GenshinComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="185dp"
+                android:layout_marginRight="60dp"
+                android:backgroundTint="#00BCD4"
+                android:text="Iniciar Sesion"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textHoyoVerse"
+            android:layout_width="243dp"
+            android:layout_height="42dp"
+            android:text="HoYoVerse"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textIsSelectable="false"
+            android:textSize="34sp"
+            android:textStyle="normal|bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.01999998" />
+
+        <Switch
+            android:id="@+id/switchHoYo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="GI / HST"
+            android:textColor="#FFFFFF"
+            android:textOff="Genshin"
+            android:textOn="HSR"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.100000024" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "469735191954",
+    "project_id": "cartarestaurante-d4b83",
+    "storage_bucket": "cartarestaurante-d4b83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469735191954:android:3e5997c4df6d0f09d53d4b",
+        "android_client_info": {
+          "package_name": "com.example.restaurantegrupal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa2syiMex9IJqqJl6-IDjqnto73EAXFdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
