@@ -23,8 +23,11 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback, View.On
 
     public Game(Context context) {
         super(context);
+
         holder=getHolder();
         holder.addCallback(this);
+
+        hayToque = false;
         setOnTouchListener(this);
         toques = new ArrayList<>();
     }
